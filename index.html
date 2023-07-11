@@ -4,94 +4,449 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css"
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Prework Study Guide</title>
+    <style>
+      .inline {
+        color:blue;
+      }
+      .bold{
+        font-weight: bold;
+      }
+      .green{
+        color: green;
+      }
+      #style1{
+        color:blueviolet;
+        
+      }
+      a[href*='Attribute']{
+        color:aquamarine;
+        font-weight: bold;
+      }
+      #hover:hover{
+        color:chartreuse;
+      }
+      .ex-list li{
+        color:indianred;
+      }
+    </style>
   </head>
   <body>
     <header id="header">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <figure>
+        <img
+        src="./assets/bowtie-cat.png"
+        alt="Profile image of cat wearing a bow tie."
+      />
+      </figure>
+      <h2>
+        ✨ Inspect the Code and Open the Console to See What's Happening ✨
+      </h2>
     </header>
     <main>
+      <!--This is a comment. Notice the syntax. Also notice the section below it uses anchors to -->
+      <nav class="card" id="directory">
+        <h2>Directory</h2>
+        <ul>
+          <li>
+            <a href="#git-section">Git Section!</a>
+          </li>
+          <li>
+            <a href="#html-section">HTML Section!</a>
+          </li>
+          <li>
+            <a href="#css-section">CSS Section!</a>
+          </li>
+          <li>
+            <a href="#javascript-section">JavaScript Section!</a>
+          </li>
+        </ul>
+      </nav>
       <section class="card" id="git-section">
         <h2>Git bash commands</h2>
         <ul>
-          <li> git status -> returns what branch I am in</li>
-          <li> ls -> lists everything in the directery i am in</li>
-          <li> cd -> changes directer to what ever is typed</li>
-          <li> git pull origin main -> updates me to the current </li>
-          <li> git push origin 'branch-name' -> will push all changes in the staging area to github for a push request</li>
-          <li> sometimes you have to use a '-' instead of a space</li>
-          <li> git checkout 'branch-name' -> switches branches</li>
-          <li> adding a -b before the name creates a new branch</li>
-          <li> git add -a -> stages all changes to added to last commited???</li>
-          <li> git commit m-"message of changes made" -> commits </li>
-          <li> commits are a snap shot of a project at a given time. They are added to the current branch you are on</li>
-          <li> pwd -> displays current working directory</li>
-          <li> start -> opens</li>
-          <li> mkdir -> creates a file in a directory</li>
-          <li> touch -> creates file in directory</li>
-          <li> cd .. -> goes back a level</li>
-          <li> git branch -> lists all branches</li>
+          <li>git status -> returns what branch I am in</li>
+          <li>ls -> lists everything in the directery i am in</li>
+          <li>cd -> changes directer to what ever is typed</li>
+          <li>git pull origin main -> updates me to the current</li>
+          <li>
+            git push origin 'branch-name' -> will push all changes in the
+            staging area to github for a push request
+          </li>
+          <li>sometimes you have to use a '-' instead of a space</li>
+          <li>git checkout 'branch-name' -> switches branches</li>
+          <li>adding a -b before the name creates a new branch</li>
+          <li>git add -a -> stages all changes to added to last commited???</li>
+          <li>git commit m-"message of changes made" -> commits</li>
+          <li>
+            commits are a snap shot of a project at a given time. They are added
+            to the current branch you are on
+          </li>
+          <li>pwd -> displays current working directory</li>
+          <li>start -> opens</li>
+          <li>mkdir -> creates a file in a directory</li>
+          <li>touch -> creates file in directory</li>
+          <li>cd .. -> goes back a level</li>
+          <li>git branch -> lists all branches</li>
         </ul>
       </section>
       <section class="card" id="html-section">
-          <h2>HTML</h2>
-          <ul type="square">
-            <li> Enter your HTML notes here</li>
-            <li> The code has a general structure starting with !DOCTYPE, then an opening tag for the element for example html if its html, then the head, <br> by the body, with in the body is the header, main, and footer, the closing tags follow for each element</li>
-            <li> The head contains information about the webpage such as metadata and the title of the page</li>
-            <li> The body contains visible content on the page</li>
-            <li> Parent and child framwork is used to describe nested elements</li>
-            <li> Lists can be ordered, ol, or unordered ul; each line of the list uses the tage 'li'</li>
-            <li> Semantic elements are better for SEO, accessibility and readability than basic 'div'</li>
-            <li> The "p" tag can be used to create new paragraphs</li>
-            <li> semantics are very important when writing code because they create order</li>
-            <li> Some semantic tags are "Head" "body" with in body "header" "main" "footer"
-            <li> some more semantic tags are ul, ol, li, br, </li>
-            <li> Attributes are added in the opening tag and are critical for elements like images</li>
-            <li> an image alt ="" is an accessibility feature that displays text when the image is not loaded or is accessesby by accessibility softwar</li>
-            <li> image src ="" is how the image sorce is linked into the code</li>
-            <li> some elements dont need a closing tag, for example images doent need a closing tag </li>
-            <li> A margin indicates how much space we want around the outside of an element</li>
-            <li> A padding indicates how much space we want around the content inside an element</li>
-            <li> class="card" has class attributes applied to it by the class selector. Is this true?</li>
-            <li> <a> is the opening tag for an anker ankers are used to unbed hyper links in a page</a> <br> href attribute is used to add the link in the opeing tag</li>
-            <li> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank"> This is link about anchors </a></li>
-            <li> target attribute specifies how a link should open. </li>
+        <h2>HTML</h2>
+        <ul type="square">
+          <li>Enter your HTML notes here</li>
+          <li>Follow the semantics of HTML</li>
+          <ul>
+            <li>Semantics provide context as to what is inside the tag</li>
+            <li>
+              head - contains metadata, style, link, script, title and more</ln
+            >
+            <li>main - contains visible content on the webpage</li>
+            <ul>
+              <li>Header</li>
+              <li>Body</li>
+              <li>Footer - contains elements such as contact information,</li>
+            </ul>
+            <li>section vs article</li>
+            <ul>
+              <li>articles make sense on there own, everything needed from start to finish is in the element</li>
+              <li>sections make sense within the current frame work the element works, for example a homepage could have different sections</li>
+            </ul>
+            <li>aside - enhances the content but is not required to understand it</li>
+            <li>figure - used to encapsulate media mentioned in the main document</li>
+            <li>figcaption - used within the figure element along side the img element and the src tag with in the img opening tag to add text to an image. Text gets grouped with image.</li>
+            <li> nav is specific for navigation links</li>
+            <li> dont forget audio elements</li>
               <ul>
-                  <li> value of "_blank" will open link in new window, with modern browsers it opens a link in a new tab</li>
+                <li>audio elements use source to encapsulate the audio link</li>
+                <li>Attributes</li>
+                <ul>
+                  <li>contorls - display the audio controls</li>
+                  <li>src - specifies the url</li>
+                  <li>type - declares the type of audio file</li>
+                  <li>autoplay - yes you guessed it</li>
+                </ul>
+                <li>
+                  <audio controls>
+                    <source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
+                 </audio>
+                </li>
               </ul>
+              <li>Video element</li>
+              <ul>
+                <li>not self enclosed</li>
+                <li>similar attributes to audio</li>
+                <ul>
+                  <li>controls</li>
+                  <li>loop</li>
+                  <li>src</li>
+                </ul>
+                <li><video src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" controls>video not supported</video></li>
+              </ul>
+              </li>
+              <li>embed is a legacy element but i find it useful for inserting gifs <embed src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif"</li>
+              <li>ul - unordered list</li>
+            <li>li - line within list</li>
+            <li>ol - ordered list</li>
+            <li>br - break</li>
+            <li>p - paragraph</li>
+            <li> To see a full list of semantics click <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">here</a></li>
+            <li> </li>
           </ul>
+          <li>
+            Start code with !DOCTYPE then declare the document type. Ex. html
+          </li>
+          <li>
+            
+          </li>
+          <li></li>
+          <li>Parent and child framwork is used to describe nested elements</li>
+          <li>
+            
+          </li>
+          <li>
+            Semantic elements are better for SEO, accessibility and readability
+            than basic 'div'
+          </li>
+          <li></li>
+          <li>
+            semantics are very important when writing code because they create
+            order
+          </li>
+          <li>
+            
+          </li>
+          <li></li>
+          <li>
+            Attributes are added in the opening tag and are critical for
+            elements like images
+          </li>
+          <li>
+            an image alt ="" is an accessibility feature that displays text when
+            the image is not loaded or is accessesby by accessibility softwar
+          </li>
+          <li>image src ="" is how the image sorce is linked into the code</li>
+          <li>
+            some elements dont need a closing tag, for example images doent need
+            a closing tag
+          </li>
+          <li>
+            A margin indicates how much space we want around the outside of an
+            element
+          </li>
+          <li>
+            A padding indicates how much space we want around the content inside
+            an element
+          </li>
+          <li>
+            class="card" has class attributes applied to it by the class
+            selector . 
+          </li>
+          <li>
+              a is the tag used for anchors, these are used to enbed hyperlinks in the text. href attribute is used to add the link in the opeing tag
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+              target="_blank"
+            >
+              This is link about anchors
+            </a>
+          </li>
+          <ul>
+            <li>target attribute specifies how a link should open.</li>
+            <ul>
+              <li>
+                value of "_blank" will open link in new window, with modern
+                browsers it opens a link in a new tab
+              </li>
+              
+            </ul>
+            <li>./ tells the browser to look in the same folder</li>
+            <li>
+              <a href="./hyperlink.html" target="_blank">Example Hyperlink</a>
+            </li>
+            <li>
+              anchors can be text or images. As long as the image or text is
+              wraped by and anchor elememnt it will behave as an anchor
+            </li>
+            <li>
+              Anchors can be used to direct users to different parts of the
+              sight.
+            </li>
+          </ul>
+          <li>Whitespace and indentation makes code easier to read</li>
+          <li>comments are made by using !-- followed by --! tags, this can be a useful technique to deactivate code with out deleting it</li>
+          <li>Two very common Global attributes class and id</li>
+          <li>When using headdings</li>
+          <ul>
+            <li>Do not skip ex. from h1 to h3</li>
+            <li>
+              Do not use headers to resize font. Instead use CSS font-size
+            </li>
+            <li>Only one h1 per page</li>
+          </ul>
+          <li>
+            Tables
+            <ul>
+              <li>The table element creates a table.</li>
+              <li>The tr element adds rows to a table.</li>
+              <li>To add data to a row, you can use the td element.</li>
+              <li>
+                Table headings clarify the meaning of data. Headings are added
+                with the th element.
+              </li>
+              <li>
+                Table data can span columns using the colspan="" attribute.
+              </li>
+              <li>Table data can span rows using the rowspan="" attribute.</li>
+              <li>
+                Tables can be split into three main sections: a head, a body,
+                and a footer.
+              </li>
+              <li>A tables head is created with the thead element.</li>
+              <li>A tables body is created with the tbody element.</li>
+              <li>A tables footer is created with the tfoot element.</li>
+              <li>
+                All the CSS properties you learned about in this course can be
+                applied to tables and their data.
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <figure>
+          <img src="./assets/CSS_Anatomy.png" alt="image of CSS Anatomy" width="500" height="300"> 
+          <figcaption>CSS Anatomy</figcaption>
+        </figure>
+        
         <ul>
-          <li> Add you notes about css here!</li>
-          <li> CSS stands for cascading style sheets</li>
-          <li> Class selectors like .card are assigned CSS rules in the .css file</li>
-          <li> the . in .card desig nates this as a class selector </li>
-          <li> Element selectors target specific elements. <br> two other selectors are id and class</li>
-          
-        </ul>
+          <li> Selectors</li>
+          <li>Type</li>
+          <ul>
+            <li>type selector matches the type of element in the HTML</li>
+            <li>ex. p element, line element</li>
+            <li>universal selector * selects elements of anytype</li>
+          </ul>
+          <li>Class</li>
+          <ul>
+            <li> When working with HTML and CSS a class attribute is one of the most common ways to select an element</li>
+            <li> dont for get the . when using class selectors</li>
+            <li class="bold green">Elements can have multiple classes like me. I was made bold and green with multiple classes and internal stylesheet</li>
+            <li id="style1">I am styled with id selector using an internal stylesheet, </li>
+            <li>class uses # in the .css and id uses . before the selector when creating a ruleset. just look in the html for this web page</li>
+            <li>elements can only have one id attribute and the id element can only be used once per page</li>
+          </ul>
+          <li>Attribute</li>
+            <ul>
+              <li>Attribute selectors allow us to select based off which attributes are present and the contents of the attribute. We can be as broad as we like and select all href attributes or be more specific and only select href with a specific string in the value</li>
+              <li>This <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes"> link </a>to a list of attributes is light blue because a attribute selector made it that way. Notice the brackets in the code and seemingly arbitrary inclusion of the element. I think the including the element increases specificity.</a></li>
+            </ul>
+          <li>Pseudo-class</li>
+            <ul>
+              <li>allows the apperance of elements to change after interaction</li>
+              <li>ex. when you click a blue link on a page and it turns purple</li>
+              <li>Ex of psuedo classes = :focus, :visited, :disabled, :active</li>
+              <li>can be added to any selector. Ex. <a href="./assets/bowtie-cat.png" target="_blank" id="hover">p:hover</a></li>
+              <ul>
+                <li>Using a assigning and id and using a psuedo class selector to enable hover feature on the above link</li>
+              </ul>
 
+            </ul>
+          <li>Specificity</li>
+            <ul>
+              <li>CSS can select HTML elements by their type, class, and ID</li> 
+              <li>Specificity is the order by which the browser decides which CSS styles will be displayed. Best practice is to go from least specific to most specific</li>
+              <li>ID is most specific, then classes and finaly type</li>
+              <li>To make styles easy to edit, its best to style with a type selector, if possible. If not, add a class selector. If that is not specific enough, then consider using an ID selector.</li>
+            </ul>
+            <li>Chaining</li>
+            <ul>
+              <li>If an html element has two or more CSS selectors at the same time they are combined into a chain.</li> 
+              <li>Ex. h1.special - would be the selector for the special class of h1</li>
+              <li></li>
+            </ul>
+            <li>Descendant Combinator</li>
+            <ul>
+              <li>This list is colored red using a decendent combinator</li>
+                <ul class="ex-list">
+                  <li>decendents are nested elements in other html elements</li>
+                  <li>Nested elements can be selected by separating selectors with a space.</li>
+                </ul>
+              <li>chaining increases specificity</li>
+              <li>More specific css selectors overrule more general selectors</li>
+            </ul>
+            <li>Multiple Selectors</li>
+            <ul>
+              <li>In order to make CSS more concise, it’s possible to add CSS styles to multiple CSS selectors all at once. This prevents writing repetitive code.</li>
+              <li>To do this the selectors are seprated with a , For <strong>ex.</strong> h1, .menu {...}</li>
+            </ul>
+            <li>Visual Rules</li>
+              <ul>
+                <li>font-family - aka font</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+          <li>CSS Anatomy</li>
+          
+          <ul>
+            <li>Ruleset terms</li>
+            <ul>
+              <li><em>Selector</em> - the beginning of the ruleset used to target the element that will be styled</li>
+              <li><em>Declaration Block</em> - The code in-between (and including) the curley braces that conatins the CSS declaration(s)</li>
+              <li><em>Declaration </em> - The group name for a property and value pair that applies a style to the selected element.</li>
+              <li><em>Property</em> - The first part of the declaration that signifies what visual characteristic of the element is to be modified</li>
+              <li><em>Value</em> - The second part of the declaration that signifies the value of the property</li>
+            </ul>
+          </ul>
+          <ul>
+            <li>Inline Style terms</li>
+              <ul>
+                <li><em>Opening Tag</em> - The start of an HTML element. This is the element that will be styled</li>
+                <li><em>Attribute</em> - The style attribute is used to add CSS inline styles to an HTML element/li>
+                <li><em>Declaration</em> - The group name for a property and value pair that applies a style to the selected element</li>
+                <li><em>Property</em> - The first part of the declaration that signifies what visual characteristic of the element is to be modified</li>
+                <li><em>Value</em> - The second part of the declaration that signifies the value of the property</li>
+              </ul>
+          </ul>
+          <li style='color: red';> Inline styling made me red </li>
+          <li class="inline">Internal stylesheets made me blue</li>
+          <li> inline style sheets can also be used in the head of the html doc</li>
+          <li>the perfered way to style is with external style sheet because it separates the CSS code separate from the html which keeps the code looking clean and free of repetition</li>
+            <ul>
+              <li>.css files must be linked</li>
+              <li>link goes in the head section</li>
+              <li>href is the attribute used similar to the anchor element</li>
+              <li>rel - the is attribute describes the relationhsip between the html and teh css file. when linking  to a stylesheet the value is stylesheet</li>
+            
+            </ul>
+          <li></li>
+          <li>Add you notes about css here!</li>
+          <li>CSS stands for cascading style sheets</li>
+          <li>
+            Class selectors like .card are assigned CSS rules in the .css file
+          </li>
+          <li>the . in .card desig nates this as a class selector</li>
+          <li>
+            Element selectors target specific elements. <br />
+            two other selectors are id and class
+          </li>
+        </ul>
       </section>
-     
+
       <section class="card" id="javascript-section">
         <h2>javascript</h2>
         <ul>
-          
-          <li> to connect script.js we need to add script src="./assets/script.js"> /script right before the closing body tag</li>
-          <li> Comments are make using /* with the comment being writen in the middle of the these opening and closing tags */ <br> if the comment does not contain breaks it can be writen behind //</li>
-          <li> scripts are called like inks are for CSS, opening tag contains a src = ""</li>
-          <li>Add notes for javascript here!</li>
-          <li> varriables are named containers that store data</li>
-          <li> var declares a variable <br> var shape = "circle" </li>
-          <li> after declaring a varriable you can give it a value. This can be done in the same line</li>
-          <li> scripts are writen at the bottom on the body of the html file because code reads from top to bottom and we want to make sure all the code is loaded befor running a script</li>
+          <li>
+            to connect script.js we need to add script src="./assets/script.js">
+            /script right before the closing body tag
+          </li>
+          <li>
+            Comments are make using /* with the comment being writen in the
+            middle of the these opening and closing tags */ <br />
+            if the comment does not contain breaks it can be writen behind //
+          </li>
+          <li>
+            scripts are called like links are for CSS, opening tag contains a src
+            = "" instead of href for the css file
+          </li>
+          <li></li>
+          <li>varriables are named containers that store data</li>
+          <li>
+            var declares a variable <br />
+            var shape = "circle"
+          </li>
+          <li>
+            after declaring a varriable you can give it a value. This can be
+            done in the same line. <br> ^^ circle is the value for shape ^^
+          </li>
+          <li>
+            scripts are writen at the bottom on the body of the html file
+            because code reads from top to bottom and we want to make sure all
+            the code is loaded befor running a script
+          </li>
+          <li>Strings are writen within in ""</li>
+          <li>values can be numbers, strings, arrays, boolean and maybe more</li>
+          <li>Control flow is the order in which a computer executes code in a script</li>
+          <li>JavaScript reads code from top to bottom</li>
+          <li>Conditinoal statements and loops control the order in which coe is executed</li>
+          <li>If statements are one way to create a conditional statement</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
-
       </section>
 
       <!-- Student code goes here -->
@@ -99,6 +454,8 @@
 
     <footer>
       <p>I can code!</p>
+      <p><strong>Email</strong> me at chigreenwork@gmail.com</p>
+      <p><em>All terms and conditions apply</em></p>
     </footer>
     <script src="./assets/script.js"></script>
   </body>
