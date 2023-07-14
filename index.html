@@ -39,7 +39,7 @@
     <header id="header">
       <h1>Prework Study Guide</h1>
       <figure>
-        <img
+        <img id="avatar"
         src="./assets/bowtie-cat.png"
         alt="Profile image of cat wearing a bow tie."
       />
@@ -71,39 +71,58 @@
         <h2>Git bash commands</h2>
         <ul>
           <li>git status -> returns what branch I am in</li>
-          <li>ls -> lists everything in the directery i am in</li>
-          <li>cd -> changes directer to what ever is typed</li>
+          <li>ls -> lists everything in the directory I am in</li>
+          <li>cd -> changes directory to what ever is typed</li>
           <li>git pull origin main -> updates me to the current</li>
           <li>
             git push origin 'branch-name' -> will push all changes in the
             staging area to github for a push request
           </li>
-          <li>sometimes you have to use a '-' instead of a space</li>
+          <li>sometimes you have to use a '-' instead of a space in certain names</li>
           <li>git checkout 'branch-name' -> switches branches</li>
           <li>adding a -b before the name creates a new branch</li>
-          <li>git add -a -> stages all changes to added to last commited???</li>
+          <li>git add -a -> stages all changes prior to committing</li>
           <li>git commit m-"message of changes made" -> commits</li>
           <li>
             commits are a snap shot of a project at a given time. They are added
             to the current branch you are on
           </li>
+          <li>Git Flow</li>
+          <ul>
+            <li>Check you on the right branch</li>
+            <li>add -A</li>
+            <li>commit</li>
+            <li>update main brach with pull</li>
+            <li>push to github</li>
+            <li>create new pull request on github</li>
+          </ul>
           <li>pwd -> displays current working directory</li>
           <li>start -> opens</li>
           <li>mkdir -> creates a file in a directory</li>
           <li>touch -> creates file in directory</li>
           <li>cd .. -> goes back a level</li>
           <li>git branch -> lists all branches</li>
+          <li>git merge 'branch name'</li>
+            <ul>
+              <li>will merge the branch you type with the branch you are on</li>
+            </ul>
+          <li>git rebase 'branch name' will take changes form 'branch name' and append them to the branch you are on with out a merge commit</li>
+          <li>git pull brings the file from the server to the local repository and the working directory. </li>
+          <li>Git fetch brings the file from the server to the local repository but does not place it in the working directory. A 'git merge' must be done to get the file into the working directory.</li>
+          <li>
+            Check out this awesome <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank">cheat-sheet</a> for git.
+          </li>
         </ul>
       </section>
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul type="square">
-          <li>Enter your HTML notes here</li>
+          
           <li>Follow the semantics of HTML</li>
           <ul>
             <li>Semantics provide context as to what is inside the tag</li>
             <li>
-              head - contains metadata, style, link, script, title and more</ln
+              head - contains metadata, style,internal CSS, links to external CSS, other links needed for the webpage, title and more</ln
             >
             <li>main - contains visible content on the webpage</li>
             <ul>
@@ -114,18 +133,19 @@
             <li>section vs article</li>
             <ul>
               <li>articles make sense on there own, everything needed from start to finish is in the element</li>
-              <li>sections make sense within the current frame work the element works, for example a homepage could have different sections</li>
+              <li>sections make sense within the current frame work, for example a homepage could have different sections</li>
             </ul>
             <li>aside - enhances the content but is not required to understand it</li>
             <li>figure - used to encapsulate media mentioned in the main document</li>
-            <li>figcaption - used within the figure element along side the img element and the src tag with in the img opening tag to add text to an image. Text gets grouped with image.</li>
+            <li>figcaption - used within the figure element along side the img element to add text to an image. Text gets grouped with image.</li>
             <li> nav is specific for navigation links</li>
-            <li> dont forget audio elements</li>
+            <li> don't forget audio elements</li>
               <ul>
                 <li>audio elements use source to encapsulate the audio link</li>
+                <li>more than one audio element can be added using the source element the adding src attribute in the opening source tag. Source tag also works for video and probably images.</li>
                 <li>Attributes</li>
                 <ul>
-                  <li>contorls - display the audio controls</li>
+                  <li>controls - display the audio controls</li>
                   <li>src - specifies the url</li>
                   <li>type - declares the type of audio file</li>
                   <li>autoplay - yes you guessed it</li>
@@ -145,7 +165,12 @@
                   <li>loop</li>
                   <li>src</li>
                 </ul>
-                <li><video src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" width="1100" controls>video not supported</video></li>
+                <figure>
+                  <video src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" width="1100" controls>video not supported</video>
+                  <figcaption>
+                    I have no idea why this video breaks when viewed on github pages but the gif works. Everything works fine locally.
+                  </figcaption>
+                </figure>
               </ul>
               </li>
               <li>embed is a legacy element but i find it useful for inserting gifs </li>
@@ -158,43 +183,32 @@
             <li>br - break</li>
             <li>p - paragraph</li>
             <li> To see a full list of semantics click <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank">here</a></li>
-            <li> </li>
           </ul>
           <li>
             Start code with !DOCTYPE then declare the document type. Ex. html
           </li>
-          <li>
-            
-          </li>
-          <li></li>
-          <li>Parent and child framwork is used to describe nested elements</li>
-          <li>
-            
-          </li>
+          <li>Parent and child framework is used to describe nested elements</li>
           <li>
             Semantic elements are better for SEO, accessibility and readability
             than basic 'div'
-          </li>
-          <li></li>
+
           <li>
             semantics are very important when writing code because they create
             order
           </li>
-          <li>
-            
-          </li>
-          <li></li>
+        
           <li>
             Attributes are added in the opening tag and are critical for
             elements like images
           </li>
           <li>
             an image alt ="" is an accessibility feature that displays text when
-            the image is not loaded or is accessesby by accessibility softwar
+            the image is not loaded or is accesses by accessibility software
           </li>
-          <li>image src ="" is how the image sorce is linked into the code</li>
+          <li>there are laws requiring accessability</li>
+          <li>image src ="" is how the image source is linked into the code</li>
           <li>
-            some elements dont need a closing tag, for example images doent need
+            some elements don't need a closing tag, for example images does not need
             a closing tag
           </li>
           <li>
@@ -210,7 +224,7 @@
             selector . 
           </li>
           <li>
-              a is the tag used for anchors, these are used to enbed hyperlinks in the text. href attribute is used to add the link in the opeing tag
+              a is the tag used for anchors, these are used to embed hyperlinks in the text. href attribute is used to add the link in the opening tag
           </li>
           <li>
             <a
@@ -230,16 +244,17 @@
               
             </ul>
             <li>./ tells the browser to look in the same folder</li>
+            <li>../ says go back one folder then look</li>
             <li>
               <a href="./hyperlink.html" target="_blank">Example Hyperlink</a>
             </li>
             <li>
               anchors can be text or images. As long as the image or text is
-              wraped by and anchor elememnt it will behave as an anchor
+              wrapped by and anchor element it will behave as an anchor
             </li>
             <li>
               Anchors can be used to direct users to different parts of the
-              sight.
+              site.
             </li>
           </ul>
           <li>Whitespace and indentation makes code easier to read</li>
@@ -285,7 +300,7 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <figure>
-          <img src="./assets/CSS_Anatomy.png" alt="image of CSS Anatomy" width="500" height="300"> 
+          <img src="./assets/CSS_Anatomy.png" alt="image of CSS Anatomy" > 
           <figcaption>CSS Anatomy</figcaption>
         </figure>
         
