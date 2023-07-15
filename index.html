@@ -260,7 +260,7 @@
           <li>Whitespace and indentation makes code easier to read</li>
           <li>comments are made by using !-- followed by -- tags, this can be a useful technique to deactivate code with out deleting it</li>
           <li>Two very common Global attributes class and id</li>
-          <li>When using headdings</li>
+          <li>When using headings</li>
           <ul>
             <li>Do not skip ex. from h1 to h3</li>
             <li>
@@ -423,12 +423,27 @@
             Element selectors target specific elements. <br />
             two other selectors are id and class
           </li>
+          <li>box-sizing: border-box; vs old model = old model (content-box) actual rendered width was content box + margin + border + padding: new model border-box takes all that into account</li>
+          <li>All HTML elements are boxes made up of four components: a content container, padding border, and margin</li>
+          <li>CHEAT - when inspection an element with dev tools to see all boxes on the page add a css line of code that is applied to all, makes a boarder that is 1px, red, and add bang important !important</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>javascript</h2>
+        <button onclick="document.getElementById('light').src='./assets/light.on.png'">Turn light on</button>
+        <button onclick="document.getElementById('light').src='./assets/light.off.png'">Turn light off</button>
         <ul>
+          <li>getElementById</li>
+            <img id="light" src="./assets/light.off.png" alt="off light bulb" height="50">
+          
+          <li></li>
+          </li>
           <li>
             to connect script.js we need to add script src="./assets/script.js">
             /script right before the closing body tag
