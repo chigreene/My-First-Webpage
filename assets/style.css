@@ -39,4 +39,7 @@ p {
     border: 5px solid #F1C40F;
     box-shadow: 5px 10px #888888;
   }
-  
+
+.variable, .variableReview{
+    padding-left: 40px;
+}
